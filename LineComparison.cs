@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LineComparisonProblem
 {
+    /// <summary>
+    /// Line Comparison Problem
+    /// </summary>
     public class LineComparison
     {
         public static float cordinatesOfLineOne()
@@ -19,14 +22,10 @@ namespace LineComparisonProblem
             Console.WriteLine("Enter point y1,y2");
             float y1 = float.Parse(Console.ReadLine());
             float y2 = float.Parse(Console.ReadLine());
-            
-            float res = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            distance = (float)Math.Sqrt(res);
-            
+
+            distance = (float)Math.Sqrt(((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
             return distance;
-
         }
-
         public static float cordinatesOfLineTwo()
         {
             Console.WriteLine("Please provide endpoint for line 2");
@@ -38,12 +37,8 @@ namespace LineComparisonProblem
             Console.WriteLine("Enter point y1,y2");
             float y1 = float.Parse(Console.ReadLine());
             float y2 = float.Parse(Console.ReadLine());
-
-            float res = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            distance = (float)Math.Sqrt(res);
-
+            distance = (float)Math.Sqrt(((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
             return distance;
-
         }
     }
 }

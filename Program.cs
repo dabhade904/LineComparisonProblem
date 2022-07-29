@@ -7,14 +7,15 @@
             Console.WriteLine("Welcome to the line comparison problem");
             
             float lineResultOne = LineComparison.cordinatesOfLineOne();
-            Console.WriteLine(lineResultOne);
-
             float lineResultTwo = LineComparison.cordinatesOfLineTwo();
-            Console.WriteLine(lineResultTwo);
-
+        
             if(lineResultOne == lineResultTwo)
             {
                 Console.WriteLine("Both lines are Equal ");
+            }
+            else if (lineResultOne > lineResultTwo)
+            {
+                Console.WriteLine("Line 1 is greater than Line 2");
             }
             else
             {
