@@ -8,21 +8,41 @@ namespace LineComparisonProblem
 {
     public class LineComparison
     {
-        public void lineComLineComparisonProblem()
+        public static float cordinatesOfLineOne()
         {
+            Console.WriteLine("Please provide endpoint for line 1");
             float distance;
-            Console.WriteLine("enter point x1,y1");
+            Console.WriteLine("Enter point x1,x2");
             float x1=float.Parse(Console.ReadLine());
-            float y1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter point x2,y2");
             float x2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter point y1,y2");
+            float y1 = float.Parse(Console.ReadLine());
             float y2 = float.Parse(Console.ReadLine());
+            
+            float res = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+            distance = (float)Math.Sqrt(res);
+            
+            return distance;
+
+        }
+
+        public static float cordinatesOfLineTwo()
+        {
+            Console.WriteLine("Please provide endpoint for line 2");
+            float distance;
+            Console.WriteLine("Enter point x1,x2");
+            float x1 = float.Parse(Console.ReadLine());
+            float x2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter point y1,y2");
+            float y1 = float.Parse(Console.ReadLine());
+            float y2 = float.Parse(Console.ReadLine());
+
             float res = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
             distance = (float)Math.Sqrt(res);
 
-            Console.WriteLine("distance is : "+distance);
-
+            return distance;
 
         }
     }
