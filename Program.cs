@@ -9,11 +9,11 @@
             float lineResultOne = LineComparison.cordinatesOfLineOne();
             float lineResultTwo = LineComparison.cordinatesOfLineTwo();
         
-            if(lineResultOne == lineResultTwo)
+            if(lineResultOne.Equals (lineResultTwo))
             {
                 Console.WriteLine("Both lines are Equal ");
             }
-            else if (lineResultOne > lineResultTwo)
+            else if (lineResultOne.CompareTo(lineResultTwo)==1)
             {
                 Console.WriteLine("Line 1 is greater than Line 2");
             }
